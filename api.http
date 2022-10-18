@@ -1,0 +1,33 @@
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "nome": "carlos",
+    "email":"carlos@gmail.com",
+    "password": "5555"
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+   
+   "username":"carlos@gmail.com",
+   "password": "5555"
+}
+
+###
+POST http://localhost:3000/auth/token
+Content-Type: application/json
+
+{
+   
+   "username":"carlos@gmail.com",
+   "password": "5555"
+}
+
+
+###
+GET  http://localhost:3000/user/todosUsuario
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjYxMTY2NjIsImV4cCI6MTY2NjExNjcyMn0.TIzB7J8cmjwTYAEyjILAjw4eqK6BJJfuhsT0HMkM7b0
