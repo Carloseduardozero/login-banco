@@ -8,7 +8,7 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://carlos:123@cluster0.3pkxtsq.mongodb.net/LoginBanco?retryWrites=true&w=majority'),
+    MongooseModule.forRoot(''),
    UserModule,
    AuthModule],
   controllers: [],
